@@ -1,0 +1,89 @@
+<html>
+ <head>
+   <title>ChineseZodiac</title>
+
+   <script>
+     function animalFinder()
+     {
+       var year = document.getElementById("year").value;
+       if(year%12===0) { document.getElementById("pic").innerHTML = "<img src = 'Monkey.jpg'>"; }
+       else if (year%12===1) { document.getElementById("pic").innerHTML = "<img src = 'Rooster.jpg'>"; }
+       else if (year%12===2) { document.getElementById("pic").innerHTML = "<img src = 'Dog.jpg'>";}
+       else if (year%12===3) { document.getElementById("pic").innerHTML = "<img src = 'Pig.jpg'>"; }
+       else if (year%12===4) { document.getElementById("pic").innerHTML = "<img src = 'Rat.jpg'>"; }
+       else if (year%12===5) { document.getElementById("pic").innerHTML = "<img src = 'OX.jpg'>"; }
+       else if (year%12===6) { document.getElementById("pic").innerHTML = "<img src = 'Tiger.jpg'>"; }
+       else if (year%12===7) { document.getElementById("pic").innerHTML = "<img src = 'Rabbit.jpg'>"; }
+       else if (year%12===8) { document.getElementById("pic").innerHTML = "<img src = 'Dragon.jpg'>"; }
+       else if (year%12===9) { document.getElementById("pic").innerHTML = "<img src = 'Snake.jpg'>" }
+       else if (year%12===10) { document.getElementById("pic").innerHTML = "<img src = 'Horse.jpg'>"; }
+       else { document.getElementById("pic").innerHTML = "<img src = 'Sheep.jpg'>"; }
+     }
+     </script>
+   </head>
+
+   <style>
+   body{
+     width: 100%;
+     height: 400px;
+     background-size: 150% 100%;
+     background-image: url("Red.gif");
+     background-color:#9e0303;
+   }
+
+   h2{
+     background-color: Goldenrod;
+     height: 15%;
+     margin: 5px;
+     border: 2px;
+     border: 5px solid White;
+     font-size: 50px;
+     font-style: oblique;
+     color: white;
+     width: 500px;
+     border-radius: 8px;
+   }
+
+   h2 li{
+      text-decoration: none;
+      display: inline;
+      float: right;
+      padding-right: 20px;
+      }
+
+  h2 li:hover{
+     background-color: Maroon;
+   }
+
+   img {
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+  border: 5px solid white;
+   }
+
+   input {
+     border-radius: 8px;
+     font-size:20px;
+     font-style: oblique;
+     font-family: sans-serif;
+     color: red;
+     border: 5px solid white;
+   }
+
+   </style>
+
+   <center>
+   <body>
+     <br>
+     <h2>Chinese Zodiac</h2>
+     <br>
+     <input type= "text" id = "year">
+     <input type = "button" value = "Enter" onclick = "animalFinder();">
+     <br>
+     <br>
+     <span id = "pic"></span>
+     </body>
+   </center>
+
+</html>
